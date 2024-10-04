@@ -1,0 +1,233 @@
+body {
+    margin: 0px 0px;
+    background-color: #26de81;
+}
+
+/* Nav section started */
+.nav_section {
+    display: flex;
+    background-color: #2f3640;
+    justify-content: space-between;
+    text-align: center;
+    font-size: 12px;
+    padding: 10px 20px; /* Add padding for better spacing */
+}
+
+.nav_section h1 { 
+    font-size: 16px; /* Adjusted font size */
+}
+
+.world {
+    padding: 0px;
+    width: 130px;
+    height: 60px;
+}
+
+.left_nev_section {
+    display: flex;
+    flex-direction: row;
+}
+
+.ecobd {
+    color: white;
+}
+
+.nav {
+    display: flex;
+    gap: 50px;
+    color: #e5ebf3;
+    margin: 0px 30px;
+}
+
+.home {
+    color: white;
+}
+
+/* Search section */
+.search_section {
+    background-color: #353b48;
+    display: flex;
+    justify-content: center;
+    padding: 30px; /* Reduced padding for better responsiveness */
+    flex-wrap: wrap; /* Allows wrapping of elements */
+    gap: 30px;
+}
+
+.search_section h1 {
+    padding: 0px 30px;
+}
+
+.search_bar {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    align-items: center;
+    width: 100%; /* Change to 100% for responsiveness */
+    max-width: 600px; /* Max width for search bar */
+    height: 40px;
+    border-radius: 40px;
+    padding: 0 15px; /* Added padding */
+}
+
+.search_bar p {
+    font-size: 18px;
+    opacity: 70%;
+}
+
+.search_div {
+    display: flex;
+    height: 37px;
+    font-size: 10px;
+    border: 1px solid white;
+    padding: 0px 10px;
+    padding-bottom: 5px;
+}
+
+.search_div h1 {
+    color: white;
+    font-size: 15px;
+}
+
+.serchIcon {
+    width: 30px;
+    height: 30px;
+    padding: 6px 0px;
+}
+
+/* Impact section */
+.content {
+    background-color: #f0f4f8;
+}
+
+.impact {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 10px;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+.impact h1 {
+    font-size: 40px;
+    width: 100%; /* Full width for heading */
+}
+
+.impact li {
+    font-size: 18px;
+    text-align: justify;
+}
+
+.impact img {
+    margin-top: 20px; /* Reduced margin for smaller screens */
+    width: 100%; /* Responsive image */
+    max-width: 500px; /* Max width for larger screens */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Tree info section */
+.treeInfo {
+    background-color: #d1d8e0;
+    font-size: 25px;
+    padding: 20px 4px;
+    color: black;
+    font: bold;
+}
+
+/* Cultivation div */
+.cultivation_div {
+    background-color: #a5b1c2;
+    font-size: 25px;
+    padding: 20px 4px;
+    color: black;
+    font: bold;
+}
+
+/* Contact to NGO */
+.contract_to_ngo {
+    padding: 20px;
+    background-color: #2f3640;
+}
+
+.single_contract {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+    color: white;
+    font-size: 25px;
+    gap: 20px;
+    background-color: #285249;
+    border: 3px solid #74b9ff;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+.contractdiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact_btn {
+    padding: 15px 40px;
+    font: bold;
+    color: #26de81;
+    font-size: 25px;
+    border-radius: 10px;
+    border: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column; /* Stack navigation items vertically */
+        gap: 20px;
+    }
+
+    .search_section {
+        flex-direction: column; /* Stack elements in search section */
+        padding: 20px;
+    }
+
+    .search_bar {
+        width: 100%; /* Full width */
+    }
+
+    .impact {
+        flex-direction: column; /* Stack impact info */
+        align-items: center;
+    }
+
+    .single_contract {
+        flex-direction: column; /* Stack contract info */
+        align-items: flex-start;
+        width: 100%; /* Full width */
+    }
+
+    .contact_btn {
+        width: 100%; /* Full width for button */
+        text-align: center; /* Center text */
+    }
+}
+
+@media (max-width: 480px) {
+    .nav_section {
+        flex-direction: column; /* Stack nav section items */
+        font-size: 10px; /* Adjust font size */
+    }
+
+    .impact h1 {
+        font-size: 30px; /* Smaller heading size */
+    }
+
+    .impact li {
+        font-size: 16px; /* Smaller list item size */
+    }
+
+    .search_bar {
+        padding: 0 10px; /* Reduce padding */
+    }
+
+    .contact_btn {
+        padding: 10px; /* Reduce padding */
+        font-size: 20px; /* Smaller button text */
+    }
+}

@@ -1,0 +1,141 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<!-- Navigation Section -->
+
+<!-- Tree Info Section -->
+<section class="treeInfo" style="background-color: #d1d8e0; font-size: 25px; padding: 20px 4px; color: black;">
+    <div class="impact" style="display: flex; justify-content: space-between; gap: 30px; padding: 10px;">
+        <div>
+            <h1 style="font-size: 40px;">Information</h1>
+            <hr>
+            <ul style="list-style-type: none; padding-left: 0;">
+                <li style="font-size: 18px; text-align: justify;"><strong>Family:</strong> Solanaceae (Nightshade family)</li>
+                <li style="font-size: 18px; text-align: justify;"><strong>Origin:</strong> Native to western South America and Central America</li>
+                <li style="font-size: 18px; text-align: justify;"><strong>Growth Habit:</strong> Herbaceous, typically grown as an annual plant</li>
+                <!-- Add other info here -->
+            </ul>
+        </div>
+        <img src="{% static 'picture/tomato.png' %}" alt="Tomato Image" style="margin-top: 20px; max-width: 500px; height: auto;">
+    </div>
+</section>
+
+<!-- Cultivation Section -->
+<div class="cultivation_div" style="background-color: #a5b1c2; font-size: 25px; padding: 20px 4px; color: black;">
+    <h1 style="font-size: 25px;">Cultivating and Caring for Tomato Plants</h1>
+    <section class="cultivation">
+        <ul>
+            <li style="font-size: 18px;">Choose a sunny location with well-drained soil.</li>
+            <!-- Add other cultivation details here -->
+        </ul>
+    </section>
+</div>
+
+<!-- Contract to NGO Section -->
+<section class="contract_to_ngo" style="padding: 20px; background-color: #2f3640;">
+    <div class="single_contract" style="display: flex; justify-content: space-between; padding: 20px 30px; color: white; font-size: 25px; gap: 20px; background-color: #285249; border: 3px solid #74b9ff;">
+        <div>
+            <h1 style="font-size: 20px;">Burpee</h1>
+            <p>A well-known seed and plant company offering a wide range of vegetable plants.</p>
+        </div>
+        <div class="contractdiv" style="display: flex; justify-content: center; align-items: center;">
+            <a href="https://www.burpee.com/" target="_blank">
+                <button class="contact_btn" style="padding: 15px 40px; background-color: #2d3436; color: #26de81; font-size: 25px; border-radius: 10px; border: none;">Website</button>
+            </a>
+        </div>
+    </div>
+
+    <div class="single_contract" style="display: flex; justify-content: space-between; padding: 20px 30px; color: white; font-size: 25px; gap: 20px; background-color: #8c3163; border: 3px solid #74b9ff;">
+        <div>
+            <h1 style="font-size: 20px;">Johnny's Selected Seeds</h1>
+            <p>Offers a variety of vegetable plants and seeds, focusing on high-quality varieties.</p>
+        </div>
+        <div class="contractdiv" style="display: flex; justify-content: center; align-items: center;">
+            <a href="https://www.johnnyseeds.com/" target="_blank">
+                <button class="contact_btn" style="padding: 15px 40px; background-color: #2d3436; color: #26de81; font-size: 25px; border-radius: 10px; border: none;">Website</button>
+            </a>
+        </div>
+    </div>
+
+    <div class="single_contract" style="display: flex; justify-content: space-between; padding: 20px 30px; color: white; font-size: 25px; gap: 20px; background-color: #285249; border: 3px solid #74b9ff;">
+        <div>
+            <h1 style="font-size: 20px;">The Home Depot</h1>
+            <p>Sells a range of vegetable plants through their garden center.</p>
+        </div>
+        <div class="contractdiv" style="display: flex; justify-content: center; align-items: center;">
+            <a href="https://www.homedepot.com/" target="_blank">
+                <button class="contact_btn" style="padding: 15px 40px; background-color: #2d3436; color: #26de81; font-size: 25px; border-radius: 10px; border: none;">Website</button>
+            </a>
+        </div>
+    </div>
+
+    <div class="single_contract" style="display: flex; justify-content: space-between; padding: 20px 30px; color: white; font-size: 25px; gap: 20px; background-color: #4a69bd; border: 3px solid #74b9ff;">
+        <div>
+            <h1 style="font-size: 20px;">IKEA</h1>
+            <p>Offers a variety of indoor and outdoor plants along with gardening supplies.</p>
+        </div>
+        <div class="contractdiv" style="display: flex; justify-content: center; align-items: center;">
+            <a href="https://www.ikea.com/" target="_blank">
+                <button class="contact_btn" style="padding: 15px 40px; background-color: #2d3436; color: #26de81; font-size: 25px; border-radius: 10px; border: none;">Website</button>
+            </a>
+        </div>
+    </div>
+
+    
+    <div class="single_contract" style="display: flex; justify-content: space-between; padding: 20px 30px; color: white; font-size: 25px; gap: 20px; background-color: #e67e22; border: 3px solid #74b9ff;">
+        <div>
+            <h1 style="font-size: 20px;">Lowe's</h1>
+            <p>Provides a wide selection of gardening tools and plant varieties.</p>
+        </div>
+        <div class="contractdiv" style="display: flex; justify-content: center; align-items: center;">
+            <a href="https://www.lowes.com/" target="_blank">
+                <button class="contact_btn" style="padding: 15px 40px; background-color: #2d3436; color: #26de81; font-size: 25px; border-radius: 10px; border: none;">Website</button>
+            </a>
+        </div>
+    </div>
+
+    
+    <div class="single_contract" style="display: flex; justify-content: space-between; padding: 20px 30px; color: white; font-size: 25px; gap: 20px; background-color: #8e44ad; border: 3px solid #74b9ff;">
+        <div>
+            <h1 style="font-size: 20px;">Walmart</h1>
+            <p>Sells a variety of plants and gardening essentials at affordable prices.</p>
+        </div>
+        <div class="contractdiv" style="display: flex; justify-content: center; align-items: center;">
+            <a href="https://www.walmart.com/" target="_blank">
+                <button class="contact_btn" style="padding: 15px 40px; background-color: #2d3436; color: #26de81; font-size: 25px; border-radius: 10px; border: none;">Website</button>
+            </a>
+        </div>
+    </div>
+
+    
+    <div class="single_contract" style="display: flex; justify-content: space-between; padding: 20px 30px; color: white; font-size: 25px; gap: 20px; background-color: #e74c3c; border: 3px solid #74b9ff;">
+        <div>
+            <h1 style="font-size: 20px;">Home Garden</h1>
+            <p>Offers a curated selection of unique plants and eco-friendly gardening supplies.</p>
+        </div>
+        <div class="contractdiv" style="display: flex; justify-content: center; align-items: center;">
+            <a href="https://www.homegarden.com/" target="_blank">
+                <button class="contact_btn" style="padding: 15px 40px; background-color: #2d3436; color: #26de81; font-size: 25px; border-radius: 10px; border: none;">Website</button>
+            </a>
+        </div>
+    </div>
+
+    
+    <div class="single_contract" style="display: flex; justify-content: space-between; padding: 20px 30px; color: white; font-size: 25px; gap: 20px; background-color: #2980b9; border: 3px solid #74b9ff;">
+        <div>
+            <h1 style="font-size: 20px;">The Plant Shop</h1>
+            <p>Specializes in houseplants, seeds, and organic gardening products.</p>
+        </div>
+        <div class="contractdiv" style="display: flex; justify-content: center; align-items: center;">
+            <a href="https://www.theplantshop.com/" target="_blank">
+                <button class="contact_btn" style="padding: 15px 40px; background-color: #2d3436; color: #26de81; font-size: 25px; border-radius: 10px; border: none;">Website</button>
+            </a>
+        </div>
+    </div>
+
+    
+
+</section>
+
+{% endblock %}
