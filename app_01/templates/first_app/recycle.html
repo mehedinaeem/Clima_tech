@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <section class="moto_title" style="display: flex; height: 100px; justify-content: center; align-items: center; background-color: #353b48; color: white; font-style: italic; font-size: 18px; text-align: center;">
+        <h1>"Together, We Can <span class="turn" style="color: #FD6F00; font-size: 50px;">Turn</span> the Tide on Climate Change"</h1>
+    </section>
+
+    <section class="content" style="display: grid; grid-template-columns: repeat(2, 1fr);">
+        <div class="c_textbtn" style="background-color: white; margin: 10px; padding: 30px; border-radius: 5px;">
+            <h1 style="font-size: 20px;">Confronting Climate Change: A Global Imperative for a Sustainable Future</h1>
+            <img src="{% static 'picture/climate_cng.jpg' %}" alt="Climate Change" style="width: 100%; height: 250px;">
+            <p style="font-size: 20px; text-align: justify;">Climate change refers to the long-term alterations in global temperatures and weather patterns, largely driven by human activities such as the burning of fossil fuels, deforestation, and industrial processes, which release greenhouse gases like carbon dioxide into the atmosphere. This warming drives various environmental impacts, including rising sea levels, melting glaciers, and more frequent and severe weather events like droughts, hurricanes, and wildfires.</p>
+            <button style="padding: 15px 25px; font-size: 15px; background-color: #2f3640; border-radius: 5px; border: none; color: white;">Read more</button>
+        </div>
+
+        <div class="c_textbtn" style="background-color: white; margin: 10px; padding: 30px; border-radius: 5px;">
+            <h1 style="font-size: 20px;">The Silent Threat: How Greenhouse Gases Are Accelerating Climate Change</h1>
+            <img src="{% static 'picture/gas.jpg' %}" alt="Greenhouse Gases" style="width: 100%; height: 250px;">
+            <p style="font-size: 20px; text-align: justify;">Greenhouse gases like carbon dioxide, methane, and nitrous oxide are trapping heat in the Earth's atmosphere, driving global warming at an alarming rate. Discover how these invisible pollutants are transforming our climate, fueling extreme weather events, rising sea levels, and threatening ecosystems worldwide. Learn why urgent action is needed to reduce emissions and protect our planet's future.</p>
+            <button style="padding: 15px 25px; font-size: 15px; background-color: #2f3640; border-radius: 5px; border: none; color: white;">Read more</button>
+        </div>
+
+        <div class="c_textbtn" style="background-color: white; margin: 10px; padding: 30px; border-radius: 5px;">
+            <h1 style="font-size: 20px;">"Rising Tides: The Global Impact of Sea Level Rise"</h1>
+            <img src="{% static 'picture/sea.jpg' %}" alt="Sea Level Rise" style="width: 100%; height: 250px;">
+            <p style="font-size: 20px; text-align: justify;">Sea levels are rising faster than ever, threatening coastal cities, displacing millions, and reshaping shorelines across the globe. Explore the causes behind this phenomenon, from melting ice caps to thermal expansion, and learn about the devastating effects it has on ecosystems, economies, and vulnerable communities. Discover the urgent measures needed to mitigate this escalating crisis and protect our planet’s future. Planting trees can also help mitigate sea level rise by stabilizing coastal soils and reducing erosion, which in turn protects vulnerable shorelines and communities from the impacts of climate change.</p>
+            <button style="padding: 15px 25px; font-size: 15px; background-color: #2f3640; border-radius: 5px; border: none; color: white;">Read more</button>
+        </div>
+
+        <div class="c_textbtn" style="background-color: white; margin: 10px; padding: 30px; border-radius: 5px;">
+            <h1 style="font-size: 20px;">The Vital Importance of Planting Trees for a Sustainable Future</h1>
+            <img src="{% static 'picture/tree.jpg' %}" alt="Planting Trees" style="width: 100%; height: 250px;">
+            <p style="font-size: 20px; text-align: justify;">Trees play a crucial role in maintaining ecological balance and supporting life on Earth. By planting trees, we can combat climate change by absorbing carbon dioxide, reduce soil erosion, enhance biodiversity, and provide essential resources such as oxygen and habitats for wildlife. Trees also contribute to improved air quality, offer shade and cooling in urban areas, and can have positive effects on mental health and well-being. Investing in tree planting not only helps restore natural environments but also supports a healthier, more resilient planet for future generations.</p>
+            <button style="padding: 15px 25px; font-size: 15px; background-color: #2f3640; border-radius: 5px; border: none; color: white;">Read more</button>
+        </div>
+    </section>
+
+    <footer style="background-color: #2f3640; color: #e5ebf3; padding: 20px; text-align: center;">
+        <section class="footer_section" style="display: flex; justify-content: space-between; align-items: center;">
+            <div class="footer_logo">
+                <img src="{% static 'picture/logo.png' %}" alt="Footer Logo" style="width: 100px;">
+            
+         </section>  
+        <p style="margin: 0;">&copy; 2024 EcoBD. All Rights Reserved.</p>
+    </footer>
+{% endblock %}
