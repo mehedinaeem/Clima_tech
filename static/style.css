@@ -1,3 +1,17 @@
-/* body{
-    background-color: blueviolet;
-} */
+/* Custom styling */
+
+.navbar-brand img {
+    max-width: 100%;
+    height: auto;
+}
+
+.navbar .form-control {
+    max-width: 200px; /* Limit the search bar width */
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+    .navbar .form-control {
+        max-width: 100%;
+    }
+}
